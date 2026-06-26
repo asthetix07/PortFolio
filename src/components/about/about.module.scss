@@ -1,0 +1,26 @@
+@use "../breakpoints.scss" as breakpoints;
+
+.hover {
+    transition: var(--transition-micro-medium);
+
+    &:hover {
+        transform: translateX(var(--static-space-4));
+    }
+}
+
+@media (max-width: breakpoints.$s) {
+    .textAlign {
+        text-align: center;
+    }
+
+    .blockAlign {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .avatar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
